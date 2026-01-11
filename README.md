@@ -1,3 +1,1 @@
-theme: jekyll-theme-minimal
-title: Ryan Jones's portfolio
-description: Bookmark this to keep an eye on my project updates!
+Ryan Jones Portfolio
