@@ -3,23 +3,29 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Ryan Jones - Developer</title>
+  <title>rjones1307 — Portfolio</title>
   <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;max-width:900px;margin:36px auto;color:#111}
+    :root{--accent:#0366d6;--muted:#6b7280}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;max-width:900px;margin:36px auto;color:#111;padding:0 18px}
     header{display:flex;align-items:center;gap:18px}
-    img.avatar{width:96px;height:96px;border-radius:12px}
+    img.avatar{width:96px;height:96px;border-radius:12px;object-fit:cover}
+    h1{margin:0;font-size:1.6rem}
+    p.lead{margin:6px 0;color:var(--muted)}
     .projects{display:grid;gap:18px;margin-top:18px}
-    .card{padding:14px;border:1px solid #e6e6e6;border-radius:10px}
-    .tech{color:#555;font-size:0.9rem}
-    a{color:#0366d6;text-decoration:none}
+    .card{padding:14px;border:1px solid #e6e6e6;border-radius:10px;background:#fff}
+    .tech{color:var(--muted);font-size:0.9rem}
+    a{color:var(--accent);text-decoration:none}
+    footer{margin-top:36px;color:var(--muted);font-size:0.9rem}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    @media (max-width:640px){header{flex-direction:row} .grid-2{grid-template-columns:1fr}}
   </style>
 </head>
 <body>
   <header>
-    <img class="avatar" src="https://via.placeholder.com/96" alt="Your photo">
+    <img class="avatar" src="https://via.placeholder.com/96" alt="Avatar">
     <div>
-      <h1>Ryan Jones</h1>
-      <p>Tagline placeholder, still working on projects</p>
+      <h1><!-- Replace with your full name -->Your Name</h1>
+      <p class="lead">Hi — I'm <strong><!-- replace or remove -->rjones1307</strong>. I build web things. (1-line tagline)</p>
       <p><a href="#projects">See my work</a> · <a href="#contact">Contact</a></p>
     </div>
   </header>
@@ -27,32 +33,48 @@
   <section id="projects">
     <h2>Selected Projects</h2>
     <div class="projects">
+      <!-- Replace these placeholder cards with real projects as you create them -->
       <div class="card">
-        <h3><a href="https://example.com">Project One</a></h3>
-        <p>One-line description of the project's purpose and my role.</p>
-        <p class="tech">Tech: React · Node · PostgreSQL</p>
-        <p><a href="https://github.com/yourname/project-one">Source</a></p>
+        <h3>Project One — Coming soon</h3>
+        <p>Short one-line summary of the project and what you learned or built.</p>
+        <p class="tech">Tech: HTML · CSS · JavaScript</p>
+        <p><a href="#">Repository / Demo (update when available)</a></p>
       </div>
 
       <div class="card">
-        <h3><a href="https://example.com">Project Two</a></h3>
-        <p>Short description and impact (users, speed improvements, revenue, etc.).</p>
-        <p class="tech">Tech: Next.js · Vercel</p>
-        <p><a href="https://github.com/yourname/project-two">Source</a></p>
+        <h3>Project Two — Coming soon</h3>
+        <p>Short one-line summary describing the problem and your approach.</p>
+        <p class="tech">Tech: (e.g., React, Node, Python)</p>
+        <p><a href="#">Repository / Demo (update when available)</a></p>
+      </div>
+    </div>
+    <p style="margin-top:12px;color:var(--muted)">Tip: Replace the cards above with 3–6 projects. For each: 1) problem, 2) what you built, 3) your role, 4) tech, 5) link to repo or demo.</p>
+  </section>
+
+  <section id="about" style="margin-top:24px">
+    <h2>About</h2>
+    <p>Two–three sentences about you. Example: "I'm learning web development and enjoy building small apps that solve everyday problems. Currently exploring React, TypeScript, and APIs."</p>
+    <div class="grid-2" style="margin-top:8px">
+      <div>
+        <strong>Skills</strong>
+        <p class="tech">JavaScript · HTML · CSS · Git · (add more)</p>
+      </div>
+      <div>
+        <strong>Looking for</strong>
+        <p class="tech">Internships · Freelance projects · Collaborations</p>
       </div>
     </div>
   </section>
 
-  <section id="about">
-    <h2>About</h2>
-    <p>Two–three sentences about you, your experience, and what you enjoy building.</p>
-    <p>Skills: JavaScript, TypeScript, React, CSS, SQL</p>
+  <section id="contact" style="margin-top:24px">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:you@example.com">you@example.com</a> (replace)</p>
+    <p>GitHub: <a href="https://github.com/rjones1307">github.com/rjones1307</a></p>
+    <p>LinkedIn: <a href="#">linkedin.com/in/yourname</a> (optional)</p>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
-    <p>GitHub: <a href="https://github.com/yourname">github.com/yourname</a> · LinkedIn: <a href="https://linkedin.com/in/yourname">yourname</a></p>
-  </section>
+  <footer>
+    <p>Built by <strong>rjones1307</strong>. Replace content above with your projects and details. To edit: update index.html, commit, and push — GitHub Pages will publish automatically.</p>
+  </footer>
 </body>
 </html>
